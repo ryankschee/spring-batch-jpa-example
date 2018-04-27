@@ -44,7 +44,7 @@ public class SpringBatchJpaExampleApplication implements SchedulingConfigurer {
 	@Autowired
 	Job job;
 	
-	private String CRONS_STRING = "* */1 * * * *";
+	private String CRONS_STRING = "0 0/5 * * * ?";
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBatchJpaExampleApplication.class, args);
